@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>ADMISIONES Y MATRICULAS</title>
+        <style>
+            .margen{
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="post" class="margen">
+                <fieldset>
+                        <center>
+                            <h4>PROCEDIMIENTO: REALIZAR ADMISIONES Y MATRICULAS</h4>
+                            <br>
+                            <h4>FORMULARIO DE INSCRIPCIÓN</h4>
+                        </center>     
+                </fieldset>
+            <br>
+            <fieldset>
+                <center>
+                    <legend><b>DATOS PERSONALES DEL ESTUDIANTE</b></legend>
+                </center>
+                <br>
+                <b>Información del estudiante:</b>
+                <br><br>
+                Primer apellido: <input type="text" name="ap1" size="10px" required placeholder="Ej: Narváez">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Segundo apellido: <input type="text" name="ap2" size="10px" required placeholder="Ej: Escorcia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Nombres: <input type="text" name="nombres" size="15px" required placeholder="Ej: Álvaro Enrique">
+                <br><br>
+                <fieldset>
+                    <legend><b>Dirreción domicilio</b></legend>
+                    Barrio: <input type="text" name="barrio" size="37px" required placeholder="Ej: 50, Cra. 50 #31, Cartagena de Indias, Bolívar">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Estrato:
+                    <select name="estrato">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select> 
+                    <br><br>
+                    Teléfono: <input type="text" name="tel" size="10px" pattern="[0-9]{10}" title="Debe tener 10 dígitos numéricos" required placeholder="Ej: 3013255427">
+                    <br><br>
+                    Fecha de nacimiento: <input type="date" name="date" required>
+                    <br><br>
+                    Edad cumplida: <input type="number" name="edad" style="width: 60px;"  min="1" required placeholder="Ej: 18">
+                    <br><br>
+                    Sexo:
+                    <select name="sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Documento:
+                    <select name="documento">
+                        <option value="Cédula">C.C</option>
+                        <option value="Tarjeta de Identidad">T.I</option>
+                    </select>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Número de documento: <input type="text" name="ndi" size="10px" required placeholder="Ej: 1043943972">
+                    <br><br>
+                    Estudiante vive con:
+                    <select name="v1">
+                        <option value="Padres">Padres</option>
+                        <option value="Padre">Padre</option>
+                        <option value="Madre">Madre</option>
+                        <option value="Solo">Solo</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                    &nbsp;<input type="text" name="otros" placeholder="Si otros, ¿Cuál?">
+                    <br><br>
+                    No. de hermanos: <input type="number" name="nhermanos" style="width: 56px;" min="0" required placeholder="Ej: 2">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lugar que ocupa entre los hermanos: <input type="text" name="lhermanos" size="10px" placeholder="Ej: Hijo mayor">
+                    <br><br>
+                    ¿Tiene hermanos en el colegio?
+                    <select name="cHermanos">
+                        <option value="Sí">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                    &nbsp;<input type="number" name="otros2" style="width: 127px;" min="1" placeholder="Si sí, ¿Cuántos?">
+                </fieldset>
+            </fieldset>
+            <br>
+            <fieldset>
+                <center>
+                <legend><b>DATOS FAMILIARES</b></legend>
+                </center>
+                <fieldset>
+                    <br>
+                    <fieldset>          
+                        <b>Información del padre:</b>
+                        <br><br>
+                        Primer apellido: <input type="text" name="ap1Padre" size="10px" required placeholder="Ej: Narváez">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Segundo apellido: <input type="text" name="ap2Padre" size="10px" required placeholder="Ej: Ruiz">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Nombres: <input type="text" name="nPadre" size="15px" required placeholder="Ej: Juan Carlos">
+                        <br><br><br> 
+                        Grado: <input type="number" name="gradoPadre" style="width: 90px;" min="1920" required placeholder="Ej: 2007">
+                        &nbsp;&nbsp;&nbsp;Fecha de nacimiento: <input type="date" name="datePadre" required>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Vive:
+                        <select name="vivePadre">
+                            <option value="Sí">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                        <br><br>
+                        Profesión u oficio: <input type="text" name="profPadre" size="18px" required>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Lugar de trabajo: <input type="text" name="lugarPadre" size="18px" required>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Cargo <input type="text" name="cargoPadre" size="18px" required>
+                        <br><br>
+                        Teléfono: <input type="text" name="telPadre" size="10px" pattern="[0-9]{10}" title="Debe tener 10 dígitos numéricos" required placeholder="Ej: 3013255427">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Email: <input type="email" name="emailPadre" size="25px" required placeholder="Ej: juancarlos@gmail.com">
+                        <br><br>
+                        Edad: <input type="number" min="18" style="width: 68px;" required placeholder="Ej: 18">
+                        &nbsp;&nbsp;&nbsp;&nbsp;C.C <input type="text" name="ndiPadre" size="10px" required placeholder="Ej: 1043943972">
+                        <br><br>
+                        Escolaridad:
+                        <select name="escoPadre">
+                            <option value="Primaria">Primaria</option>
+                            <option value="Secundaria">Secundaria</option>
+                            <option value="Técnico">Técnico</option>
+                            <option value="Universitario">Universitario</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                            &nbsp;<input type="text" name="otrosPadre" placeholder="Si otros, ¿Cuál?">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <b>Información de la madre:</b>
+                        <br><br>
+                        Primer apellido: <input type="text" name="ap1Madre" size="10px" required placeholder="Ej: Jiménez">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Segundo apellido: <input type="text" name="ap2Madre" size="10px" required placeholder="Ej: Escorcia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Nombres: <input type="text" name="nMadre" size="15px" required placeholder="Ej: Valentina Andrea">
+                        <br><br>                       
+                        Grado: <input type="number" name="gradoMadre" style="width: 90px;" min="1920" required placeholder="Ej: 2007">
+                        &nbsp;&nbsp;&nbsp;Fecha de nacimiento: <input type="date" name="dateMadre" required>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Vive:
+                        <select name="viveMadre">
+                            <option value="Sí">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                        <br><br>
+                        Profesión u oficio: <input type="text" name="profMadre" size="18px" required>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Lugar de trabajo: <input type="text" name="lugarMadre" size="18px" required>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Cargo <input type="text" name="cargoMadre" size="18px" required>
+                        <br><br>
+                        Teléfono: <input type="text" name="telMadre" size="10px" pattern="[0-9]{10}" title="Debe tener 9 dígitos numéricos" required placeholder="Ej: 3013255427">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Email: <input type="email" name="emailMadre" size="25px" required placeholder="Ej: valentinadrea@gmail.com">
+                        <br><br>Edad: <input type="number" min="18" style="width: 68px;" required placeholder="Ej: 18">
+                        &nbsp;&nbsp;&nbsp;&nbsp;C.C <input type="text" name="ndiMadre" size="10px" required placeholder="Ej: 1043943972">
+                        <br><br>
+                        Escolaridad:
+                        <select name="escoMadre">
+                            <option value="Primaria">Primaria</option>
+                            <option value="Secundaria">Secundaria</option>
+                            <option value="Técnico">Técnico</option>
+                            <option value="Universitario">Universitario</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                        &nbsp;<input type="text" name="otrosMadre" placeholder="Si otros, ¿Cuál?">
+                    </fieldset>
+                    <br>
+                    Estado civil de los padres:
+                    <select name="civilPadres">
+                        <option value="Viudo(a)">Viudo(a)</option>
+                        <option value="Separado(a)">Separado(a)</option>
+                        <option value="Unión libre">Unión libre</option>
+                        <option value="Soltero(a)">Soltero(a)</option>
+                        <option value="Casado(a)">Casado(a)</option>
+                    </select>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <b>Nombre del acudiente:</b> (Diligenciar solo si es diferente a alguno de los padres)
+                    <br><br>
+                    Primer apellido: <input type="text" name="ap1Acudiente" size="10px" placeholder="Ej: Escobar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Segundo apellido: <input type="text" name="ap2Acudiente" size="10px" placeholder="Ej: Correa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Nombres: <input type="text" name="nAcudiente" size="15px" placeholder="Ej: Martín Andrés">
+                    <br><br>                       
+                        Grado: <input type="number" name="gradoAcudiente" style="width: 90px;" min="1920" placeholder="Ej: 2007">
+                        &nbsp;&nbsp;&nbsp;Fecha de nacimiento: <input type="date" name="dateAcudiente">
+                        <br><br>
+                        Profesión u oficio: <input type="text" name="profAcudiente" size="18px">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Lugar de trabajo: <input type="text" name="lugarAcudiente" size="18px">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Cargo <input type="text" name="cargoAcudiente" size="18px">
+                        <br><br>
+                        Teléfono: <input type="text" name="telAcudiente" size="10px" pattern="[0-9]{10}" title="Debe tener 10 dígitos numéricos" placeholder="Ej: 3013255427">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Email: <input type="email" name="emailAcudiente" size="25px" placeholder="Ej: martincorrea1998@gmail.com">
+                        <br><br>Edad: <input type="number" min="18" style="width: 68px;" placeholder="Ej: 18">
+                        &nbsp;&nbsp;&nbsp;&nbsp;C.C <input type="text" name="ndiAcudiente" size="10px" placeholder="Ej: 1043943972">
+                        <br><br>
+                        Escolaridad:
+                        <select name="escoAcudiente">
+                            <option value="Primaria">Primaria</option>
+                            <option value="Secundaria">Secundaria</option>
+                            <option value="Técnico">Técnico</option>
+                            <option value="Universitario">Universitario</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                        &nbsp;<input type="text" name="otrosAcudiente" placeholder="Si otros, ¿Cuál?"> 
+                        <br><br>
+                        Relación con el estudiante: <input type="text" name="relAcudiente" size="15px">
+                </fieldset>
+            </fieldset>
+            <br>
+            <br>
+            <center>
+                <input type="submit" value="GUARDAR">
+            </center>
+        </form>
+    </body>
+</html>
